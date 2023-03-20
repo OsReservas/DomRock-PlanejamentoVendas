@@ -1,5 +1,7 @@
-# DomRock - Planejamento de Vendas
-Projeto em parceria com Dom Rock, onde será desenvolvido um sistema de planejamento de vendas de produtos.
+<h1 align="center"></h1>
+<div text align="center">
+<img src="Doc/assets/img/logo02.png"  width="200" height="98" />
+</div><br>
 <p align="center">
     <img src="https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white"/>
     <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white"/>
@@ -9,108 +11,55 @@ Projeto em parceria com Dom Rock, onde será desenvolvido um sistema de planejam
     <img src="https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white"/>
 </p>
 
-<div text align="center">
-<img src="docs/img/logo02.png"  width="768" height="230" />
-</div><br>
-<p align="left">
-Somos uma empresa de tecnologia de dados e necessitamos fornecer uma aplicação de
-apoio ao processo de planejamento de vendas e operações de uma grande empresa. O
-desafio consiste em lidar com o histórico de movimentação de produtos (vendas e
-estoque), predição de faturamento feito por um algoritmo de IA já existente e a entrada
-de dados oriundas da força de vendas quanto ao planejamento futuro. Dessa forma, deve ser criada uma interface (CRUD) para lançamento dos dados a ser feito pela força
-de vendas e uma interface de exibição com o histórico de vendas, predição e plano de
-vendas com gráfico e tabela para exportação no formato CSV ou Excel. Essa tela deve
-conter filtros por cliente, produto e data
+<p align="justify">
+Nesse semestre o grupo está propondo uma solução para a empresa Dom Rock. O desafio consiste em lidar com o histórico de movimentação de produtos (vendas e
+estoque), predição de faturamento (feito por um algoritmo de IA já existente) e a entrada de dados oriundas da força de vendas quanto ao planejamento futuro.
 </p>
+<div align="center">
+   <a href="">Live Preview</a> |
+   <a href="Doc">Documentação</a> |  
+   <a href="">Manual de Utilização</a>
 
-<h2 align="center"> 💻 Manual de Utilizacao</h2>
-<p align="center"><b>Você pode acessar o manual de como baixar e utilizar o sistema clicando <a href=""><em>aqui</em></a></b></p><br><br>
-
-<h2 text align= "center"> 🗓️ Cronograma
-</h2>    
-
-<div text align= "center">
-<h3 text align= "center">Kick off 27/02/2023</h3> <br>
-✅| 1º sprint 13/03/2023 a 02/04/2023<br>
-✅| 2º sprint 03/04/2023 a 23/04/2023<br>
-✅| 3º sprint 24/04/2023 a 14/05/2023<br>
-✅| 4º sprint 15/05/2023 a 04/06/2023<br>
-- Feira de soluções 13/06/2023 e 14/06/2023
-</div>
-    
-<h2 align="center">Product Backlog:</h2><br>
-<table align="center">
-  <tr>
-   <td>Ação</td>
-   <td>Prioridade</td>
-  </tr>
-
-  <tr>
-   <td>A definir</td>
-   <td>1</td>
-  </tr>
-
-  <tr>
-   <td>A definir</td>
-   <td>2</td>
-  </tr>
-
-  <tr>
-   <td>A definir</td>
-   <td>3</td>
-  </tr>
- 
-  <tr>
-    <td>A definir</td>
-    <td>4</td>
-  </tr>
-  
-  <tr>
-    <td>A definir</td>
-    <td>5</td>
-  </tr>
- 
-  <tr>
-     <td>A definir</td>
-     <td>6</td>
-  </tr>
-  
-  
-  <tr>
-     <td>A definir</td>
-     <td>7</td>
-  </tr>
- 
-  <tr>
-     <td>A definir</td>
-     <td>8</td>
-  </tr>
- 
-  <tr>
-     <td>A definir</td>
-     <td>9</td>
-  </tr>
- 
- 
-  <tr>
-     <td>A definir</td>
-     <td>10</td>
-  </tr>
- 
-  <tr>
-     <td>A definir</td>
-     <td>11</td>
-  </tr>
- 
-</table>
+<h1 text align= "left">🗓️ Entregas</h1>    
+ <table align="center">
+                     <thead>
+                            <th width=100px>Entrega</th>
+                            <th width=500px>Descrição</th>
+                            <th width=45px>Data</th>
+                            <th width=45px>Link</th>
+                     </thead>
+                     <tr>
+                            <td><p align="center">Primeira Sprint</p></td>
+                            <td><p align="justify">-</p></td>
+                            <td><p align="center">02/04</p></td>
+                            <td><p align="center"><a href="-">Visualizar</a></p></td>
+                     </tr>
+                      <tr>
+                            <td><p align="center">Segunda Sprint</p></td>
+                            <td><p align="justify">-</p></td>
+                            <td><p align="center">23/04</p></td>
+                            <td><p align="center"><a href="-">Visualizar</p></td>
+                     </tr>
+                     <tr>
+                            <td><p align="center">Terceira Sprint</p></td>
+                            <td><p align="justify">-</p></td>
+                            <td><p align="center">14/05</p></td>
+                            <td><p align="center"><a href="-">Visualizar</p></td>
+                     </tr>
+                     <tr>
+                            <td><p align="center">Quarta Sprint</p></td>
+                            <td><p align="justify">-</p></td>
+                            <td><p align="center">04/06</p></td>
+                            <td><p align="center"><a href="-">Visualizar</p></td>
+                     </tr>
+ </table>
+<div align="center">
+   <a href="">Burndown</a> |
+   <a href="">Product Backlog</a>
 
 
-<h2 align="center">Tasklist</h2>
-    <img src=""><br>
-    
-
-<div text align= "center">
-<h2>Equipe 👩‍💻</h2>
+<div text align= "left">
+<h1 align="left">👩‍💻 Equipe</h1>
 <a href="https://www.linkedin.com/in/thiago-lopes-chaves-5ba22b209">Thiago Chaves </a>(<i>Dev Team</i>)</li><br>
 <a href="https://www.linkedin.com/in/murilo-jos%C3%A9-de-brito-junior-32403b157">Murilo Junior</a>  (<i>Dev Team</i>)</li><br>
 <a href="https://www.linkedin.com/in/bewtrice/">Beatrice Lopes Correa</a> (<i>Product Owner</i>)</li><br>
