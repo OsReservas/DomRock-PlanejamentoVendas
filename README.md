@@ -1,6 +1,6 @@
 <h1 align="center"></h1>
 <div text align="center">
-<img src="Doc/assets/img/logo02.png"  width="200" height="98" />
+<img src="Doc/assets/img/logo02.png"  width="360" height="120" />
 </div><br>
 <p align="center">
     <img src="https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white"/>
