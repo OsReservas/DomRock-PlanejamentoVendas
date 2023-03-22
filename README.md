@@ -53,6 +53,31 @@ estoque), predição de faturamento (feito por um algoritmo de IA já existente)
                             <td><p align="center"><a href="-">Visualizar</p></td>
                      </tr>
  </table>
+
+<h1 align="left">🗓️ Backlog da Sprint</h1>
+ <table align="center">
+                     <thead>
+                     <th width=100px>Item</th>
+                            <th width=500px>Descrição</th>
+                            <th width=45px>Status</th>
+                     </thead>
+                      <tr>
+                            <td><p align="center">Tela do Vendedor</p></td>
+                            <td><p align="left">Tela de gerenciamento de vendas e clientes.</p></td>
+                            <td><p align="center">A fazer</a></p></td>
+                     </tr>
+                      <tr>
+                            <td><p align="center">Tela Histórico de Vendas</p></td>
+                            <td><p align="left">Visualização do histórico de vendas ao longo dos meses.</p></td>
+                            <td><p align="center">A fazer</p></td>
+                     </tr>
+                     <tr>
+                            <td><p align="center">Tela do Cadastro de Vendas</p></td>
+                            <td><p align="left">Tela onde o vendedor pode preencher os dados e realizar o cadastro de suas vendas.</p></td>
+                            <td><p align="center">A fazer</p></td>
+                     </tr>
+
+ </table>
 <div align="center">
    <a href="">Burndown</a> |
    <a href="">Product Backlog</a>
