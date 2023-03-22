@@ -1,6 +1,6 @@
 <h1 align="center"></h1>
 <div text align="center">
-<img src="Doc/assets/img/logo02.png"  width="200" height="98" />
+<img src="Doc/assets/img/logo02.png"  width="360" height="120" />
 </div><br>
 <p align="center">
     <img src="https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white"/>
@@ -32,7 +32,7 @@ estoque), predição de faturamento (feito por um algoritmo de IA já existente)
                             <td><p align="center">Primeira Sprint</p></td>
                             <td><p align="justify">-</p></td>
                             <td><p align="center">02/04</p></td>
-                            <td><p align="center"><a href="-">Visualizar</a></p></td>
+                            <td><p align="center"><a href="https://github.com/OsReservas/DomRock-PlanejamentoVendas/tree/sprint-1">Visualizar</a></p></td>
                      </tr>
                       <tr>
                             <td><p align="center">Segunda Sprint</p></td>
