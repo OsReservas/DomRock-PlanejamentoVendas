@@ -32,7 +32,7 @@ estoque), predição de faturamento (feito por um algoritmo de IA já existente)
                             <td><p align="center">Primeira Sprint</p></td>
                             <td><p align="justify">-</p></td>
                             <td><p align="center">02/04</p></td>
-                            <td><p align="center"><a href="-">Visualizar</a></p></td>
+                            <td><p align="center"><a href="https://github.com/OsReservas/DomRock-PlanejamentoVendas/tree/sprint-1">Visualizar</a></p></td>
                      </tr>
                       <tr>
                             <td><p align="center">Segunda Sprint</p></td>
