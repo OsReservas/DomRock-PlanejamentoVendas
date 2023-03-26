@@ -1,6 +1,5 @@
 package com.osreservas.projeto.dom.rock.entities;
 
-import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -15,7 +14,7 @@ public class Produto implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String name;
+    private String nome;
     private String descricao;
 
 
@@ -25,9 +24,9 @@ public class Produto implements Serializable {
     }
 
 
-    public Produto(Long id, String name, String descricao) {
+    public Produto(Long id, String nome, String descricao) {
         this.id = id;
-        this.name = name;
+        this.nome = nome;
         this.descricao = descricao;
     }
 
@@ -43,13 +42,13 @@ public class Produto implements Serializable {
     }
 
 
-    public String getName() {
-        return name;
+    public String getNome() {
+        return nome;
     }
 
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getDescricao() {
@@ -61,6 +60,7 @@ public class Produto implements Serializable {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
 
     @Override
     public boolean equals(Object o) {

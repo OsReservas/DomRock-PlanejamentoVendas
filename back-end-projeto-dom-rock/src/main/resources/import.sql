@@ -1,0 +1,1 @@
+INSERT INTO tb_produto (nome, descricao ) values ('chapa aco', 'chapa de aco');
