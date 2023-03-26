@@ -13,3 +13,6 @@ $custom-thema: mat-light-theme($custom-app-primary,$custom-app-secondary,$custom
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+mat-card{
+    width: 80vw;
+}

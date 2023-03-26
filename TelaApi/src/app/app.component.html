@@ -1,6 +1,10 @@
 
-<mat-toolbar color="primary">
-   <span>Custom Toolbar</span>
-</mat-toolbar>
-
-<router-outlet> </router-outlet>
+<div class="custom-page">
+   <div class="sidebar">
+      <app-sidebar></app-sidebar>
+   </div>
+   
+   <div class="content">
+      <router-outlet></router-outlet>
+   </div>
+</div>
