@@ -1,13 +1,18 @@
 .custom-page{
+    background-color: rgba(0, 0, 0, .1);
     display: flex;
 }
 
 .sidebar{
     display: flex;
+    height: 100vh;
 }
 
 .content{
+    padding: 20px;
     display: flex;
     width: 100vw;
-    justify-content: flex-end;
+    justify-content: center;
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
 }
+
