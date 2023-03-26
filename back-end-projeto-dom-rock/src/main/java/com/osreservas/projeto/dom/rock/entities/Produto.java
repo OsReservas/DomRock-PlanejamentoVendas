@@ -1,12 +1,21 @@
 package com.osreservas.projeto.dom.rock.entities;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.io.Serializable;
 import java.util.Objects;
 
+@Entity
+@Table(name = "tb_produto")
 public class Produto implements Serializable {
     private static final long serialVersionUID = 1L;
 
 
+    @Id
+    @Autowired
     private Long id;
     private String name;
     private String descricao;
