@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -28,9 +29,12 @@ public class ProdutoService {
     }
 
 
+    @Transactional(readOnly = true)
+    public ProdutoDTO findById(Long id) {
+        Optional<Produto> obj = repository.findById(id);
+        Produto entity = obj.get();
+        return new ProdutoDTO(entity);
 
-
-
-
+    }
 
 }
