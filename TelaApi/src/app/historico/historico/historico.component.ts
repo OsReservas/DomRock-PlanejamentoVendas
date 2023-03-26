@@ -1,6 +1,8 @@
-import { Historico } from './../moldelos/historico';
 import { Component } from '@angular/core';
 
+import { Historico } from './../moldelos/historico';
+import { HistoricoService } from '../servico/historico.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-historico',
@@ -8,8 +10,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./historico.component.scss']
 })
 export class HistoricoComponent {
-  hitorico: Historico[]  = [
-    {_id: '1',cliente:'ABBAS INDUSTRIA E COMERCIO LTD',produto: 'ferro',data: '2/2/2023',quantidade:"1000"}  //coloca os dados para preencher a tabelas
-  ];
+
+  historico: Observable<Historico[]>;
   displayedColumns = ['cliente', 'produto', 'data', 'quantidade']; // os indices das tabelas
+
+
+  constructor(private historicoService: HistoricoService){
+
+   this.historico = this.historicoService.list();
   }
+  }
+
