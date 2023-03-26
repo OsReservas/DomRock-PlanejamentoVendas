@@ -2,9 +2,7 @@ package com.osreservas.projeto.dom.rock.entities;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -15,7 +13,7 @@ public class Produto implements Serializable {
 
 
     @Id
-    @Autowired
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String descricao;
