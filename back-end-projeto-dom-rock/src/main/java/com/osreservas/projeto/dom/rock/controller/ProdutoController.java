@@ -1,15 +1,16 @@
 package com.osreservas.projeto.dom.rock.controller;
 
 import com.osreservas.projeto.dom.rock.dto.ProdutoDTO;
+import com.osreservas.projeto.dom.rock.entities.Produto;
+import com.osreservas.projeto.dom.rock.exceptions.EntidadeNaoLocalizada;
 import com.osreservas.projeto.dom.rock.services.ProdutoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 
+import java.net.URI;
 import java.util.List;
 
 
@@ -30,9 +31,19 @@ public class ProdutoController {
     }
 
     @GetMapping(value = "/{id}")
-    public ResponseEntity<ProdutoDTO> findById(@PathVariable Long id){
+    public ResponseEntity<ProdutoDTO> findById(@PathVariable Long id) throws EntidadeNaoLocalizada {
         ProdutoDTO dto = Produtoservice.findById(id);
         return ResponseEntity.ok().body(dto);
+
+
+    }
+
+    @PostMapping
+    public ResponseEntity<ProdutoDTO> insert(@RequestBody ProdutoDTO dto){
+         dto = Produtoservice.insert(dto);
+         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
+                 .buildAndExpand(dto.getId()).toUri();
+         return ResponseEntity.created(uri).body(dto);
 
 
     }

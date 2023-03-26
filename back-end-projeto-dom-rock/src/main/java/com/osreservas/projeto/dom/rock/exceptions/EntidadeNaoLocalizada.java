@@ -1,9 +1,9 @@
 package com.osreservas.projeto.dom.rock.exceptions;
 
-public class EntityNotFoundException extends Exception{
+public class EntidadeNaoLocalizada extends Exception{
 
 
-    public EntityNotFoundException(String msg){
+    public EntidadeNaoLocalizada(String msg){
         super(msg);
     }
 }
