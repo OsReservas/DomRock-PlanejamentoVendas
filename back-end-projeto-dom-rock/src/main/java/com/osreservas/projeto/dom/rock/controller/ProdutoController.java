@@ -2,6 +2,7 @@ package com.osreservas.projeto.dom.rock.controller;
 
 import com.osreservas.projeto.dom.rock.dto.ProdutoDTO;
 import com.osreservas.projeto.dom.rock.entities.Produto;
+import com.osreservas.projeto.dom.rock.exceptions.DatabaseException;
 import com.osreservas.projeto.dom.rock.exceptions.EntidadeNaoLocalizada;
 import com.osreservas.projeto.dom.rock.services.ProdutoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,6 +48,24 @@ public class ProdutoController {
 
 
     }
+
+
+//    @PutMapping(value = "/{id}")
+//    public ResponseEntity<ProdutoDTO> update(@PathVariable Long id, @RequestBody ProdutoDTO dto) {
+//        dto = Produtoservice.update(dto);
+//        return ResponseEntity.ok().body(dto);
+//
+//
+//    }
+
+
+    @DeleteMapping(value = "/{id}")
+    public ResponseEntity<Void> delete (@PathVariable Long id) throws DatabaseException, EntidadeNaoLocalizada {
+        Produtoservice.delete(id);
+        return ResponseEntity.noContent().build();
+
+    }
+
 
 
 

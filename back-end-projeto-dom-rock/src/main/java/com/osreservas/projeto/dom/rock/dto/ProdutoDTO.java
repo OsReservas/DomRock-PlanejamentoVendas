@@ -19,13 +19,11 @@ public class ProdutoDTO {
         this.descricao = descricao;
     }
 
-
     public ProdutoDTO(Produto entity){
         this.id = entity.getId();
         this.nome = entity.getNome();
+        this.descricao = entity.getDescricao();
     }
-
-
 
     public Long getId() {
         return id;
