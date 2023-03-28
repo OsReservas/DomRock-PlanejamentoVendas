@@ -3,17 +3,30 @@
         <mat-toolbar class="toolbar border rounded-3">
             <span>Cadastrar Vendas</span>
         </mat-toolbar>
+        
         <form class="formulario h-100 p-5" [formGroup]="cadastroVenda">
             <div class="itens row align-items-md-stretch">
                 <div class="col-md-6">
                         <label for="cliente">Cliente</label>
-                        <input id="cliente" class="form-control " type = "text" formControlName="cliente">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Cliente</mat-label>
+                            <mat-select>
+                                <mat-option>1</mat-option>
+                                <mat-option>2</mat-option>
+                            </mat-select>
+                        </mat-form-field>
                 </div>
             </div>
             <div class="itens row align-items-md-stretch">
                 <div class="col-md-6">
                         <label for="produto">Produto</label>
-                        <input id="produto" class="form-control" type = "text" formControlName="produto">
+                        <mat-form-field appearance="fill">
+                            <mat-label>Código-Produto</mat-label>
+                            <mat-select>
+                                <mat-option>1</mat-option>
+                                <mat-option>2</mat-option>
+                            </mat-select>
+                        </mat-form-field>
                 </div>
             </div>
             
@@ -28,6 +41,15 @@
                 <div class="col-md-6">
                     <label for="data">Data</label>
                     <input id="data" class="form-control" type = "date" formControlName="data">
+                </div>
+            </div>
+
+            <div class="itens row align-items-md-stretch">
+                <div class="col-md-2">
+                    <button class="btn btn-outline-primary btn-lg btn-block">Salvar</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-outline-primary btn-lg btn-block">Limpar</button>
                 </div>
             </div>
 
