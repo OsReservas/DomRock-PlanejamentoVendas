@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [HomeComponent],
@@ -11,7 +13,11 @@ import { MatCardModule } from '@angular/material/card';
     CommonModule,
     ReactiveFormsModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
+    CommonModule,
+    FormsModule,
+    MatSelectModule,
+    MatFormFieldModule,
   ],
   exports:[HomeComponent]
 })
