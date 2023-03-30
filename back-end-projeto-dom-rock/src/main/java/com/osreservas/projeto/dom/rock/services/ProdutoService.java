@@ -10,15 +10,15 @@ import com.osreservas.projeto.dom.rock.repositories.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.dao.EmptyResultDataAccessException;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 
 import javax.persistence.EntityNotFoundException;
-import javax.xml.crypto.Data;
-import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
+
 
 @Service
 public class ProdutoService {
@@ -30,11 +30,14 @@ public class ProdutoService {
 
 
     @Transactional(readOnly = true)
-    public List<ProdutoDTO> findAll() {
-        List<Produto> list = repository.findAll();
-        return list.stream().map(x -> new ProdutoDTO(x)).collect(Collectors.toList());
+    public Page<ProdutoDTO> findAllPaged(PageRequest pageRequest) {
+        Page<Produto> list = repository.findAll(pageRequest);
+        return list.map(x -> new ProdutoDTO(x));
+
 
     }
+
+
 
 
     @Transactional(readOnly = true)
@@ -73,6 +76,8 @@ public class ProdutoService {
     }
 
 
+
+
     public void delete(Long id) throws DatabaseException, EntidadeNaoLocalizada {
         try {
             repository.deleteById(id);
@@ -84,6 +89,8 @@ public class ProdutoService {
             throw new DatabaseException("Integrity Violation");
         }
     }
+
+
 
 
 
