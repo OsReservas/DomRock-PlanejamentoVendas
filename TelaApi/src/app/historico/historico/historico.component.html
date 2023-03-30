@@ -1,40 +1,40 @@
-
 <mat-card>
-<mat-card-content>
+  <mat-card-content>
+    <mat-toolbar class="toolbar border rounded-3">
+      <span>Historico de Vendas</span>
+    </mat-toolbar>
 
+    <div *ngIf="historico$ | async as historico; else carregando">
+      <table mat-table [dataSource]="historico">
+        <ng-container matColumnDef="cliente">
+          <th mat-header-cell *matHeaderCellDef>Cliente</th>
+          <td mat-cell *matCellDef="let element">{{ element.cliente }}</td>
+        </ng-container>
 
-<mat-toolbar class="toolbar border rounded-3">
- <span>Historico de Vendas</span>
-</mat-toolbar>
+        <ng-container matColumnDef="produto">
+          <th mat-header-cell *matHeaderCellDef>Produto</th>
+          <td mat-cell *matCellDef="let element">{{ element.produto }}</td>
+        </ng-container>
 
+        <ng-container matColumnDef="data">
+          <th mat-header-cell *matHeaderCellDef>Data</th>
+          <td mat-cell *matCellDef="let element">{{ element.data }}</td>
+        </ng-container>
 
-  <table mat-table [dataSource]="historico">
+        <ng-container matColumnDef="quantidade">
+          <th mat-header-cell *matHeaderCellDef>Quantidade</th>
+          <td mat-cell *matCellDef="let element">{{ element.quantidade }}</td>
+        </ng-container>
 
-    <ng-container matColumnDef="cliente">
-      <th mat-header-cell *matHeaderCellDef> Cliente </th>
-      <td mat-cell *matCellDef="let element"> {{element.cliente}} </td>
-    </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+    </div>
 
-    <ng-container matColumnDef="produto">
-      <th mat-header-cell *matHeaderCellDef> Produto </th>
-      <td mat-cell *matCellDef="let element"> {{ element.produto }} </td>
-    </ng-container>
-
-    <ng-container matColumnDef="data">
-      <th mat-header-cell *matHeaderCellDef> Data </th>
-      <td mat-cell *matCellDef="let element"> {{element.data}} </td>
-    </ng-container>
-
-    <ng-container matColumnDef="quantidade">
-      <th mat-header-cell *matHeaderCellDef> Quantidade </th>
-      <td mat-cell *matCellDef="let element"> {{element.quantidade}} </td>
-    </ng-container>
-
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-  </table>
-
-
-</mat-card-content>
+    <ng-template #carregando>
+      <div class="carregando-spinner">
+        <mat-spinner></mat-spinner>
+      </div>
+    </ng-template>
+  </mat-card-content>
 </mat-card>
-

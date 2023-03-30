@@ -11,13 +11,13 @@ import { Observable } from 'rxjs';
 })
 export class HistoricoComponent {
 
-  historico: Observable<Historico[]>;
+  historico$: Observable<Historico[]>;
   displayedColumns = ['cliente', 'produto', 'data', 'quantidade']; // os indices das tabelas
 
 
   constructor(private historicoService: HistoricoService){
 
-   this.historico = this.historicoService.list();
+   this.historico$ = this.historicoService.list();
   }
   }
 
