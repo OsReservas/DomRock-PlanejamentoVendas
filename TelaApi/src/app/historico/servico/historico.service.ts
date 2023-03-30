@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { tap } from 'rxjs';
+import { first, tap } from 'rxjs';
 
 import { Historico } from '../moldelos/historico';
 
@@ -16,6 +16,7 @@ export class HistoricoService {
   list() {
       return this.httpClient.get<Historico[]>(this.API)
       .pipe(
+        first(),
         tap(histotico => console.log(histotico))
       );
     }
