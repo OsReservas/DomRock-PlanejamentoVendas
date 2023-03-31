@@ -16,10 +16,8 @@
 Nesse semestre o grupo está propondo uma solução para a empresa Dom Rock. O desafio consiste em lidar com o histórico de movimentação de produtos (vendas e
 estoque), predição de faturamento (feito por um algoritmo de IA já existente) e a entrada de dados oriundas da força de vendas quanto ao planejamento futuro.
 </p>
-<div align="center">
-   <a href="">Live Preview</a> |
-   <a href="Doc">Documentação</a> |  
-   <a href="">Manual de Utilização</a>
+<div align="center"> 
+    | <a href="">Manual de Utilização</a>  | 
 
 <h1 text align= "left">🗓️ Entregas</h1>    
  <table align="center">
@@ -30,66 +28,31 @@ estoque), predição de faturamento (feito por um algoritmo de IA já existente)
                             <th width=45px>Link</th>
                      </thead>
                      <tr>
-                            <td><p align="center">Primeira Sprint</p></td>
-                            <td><p align="justify">-</p></td>
+                            <td><p align="center">Sprint 1 <b>Backlog</b></p></td>
+                            <td><p align="justify">Gerenciamento de vendas e de clientes, visualização do histórico das vendas ao longo dos meses</p></td>
                             <td><p align="center">02/04</p></td>
                             <td><p align="center"><a href="https://github.com/OsReservas/DomRock-PlanejamentoVendas/tree/sprint-1">Visualizar</a></p></td>
                      </tr>
-                      <tr>
-                            <td><p align="center">Segunda Sprint</p></td>
-                            <td><p align="justify">-</p></td>
-                            <td><p align="center">23/04</p></td>
-                            <td><p align="center"><a href="-">Visualizar</p></td>
-                     </tr>
-                     <tr>
-                            <td><p align="center">Terceira Sprint</p></td>
-                            <td><p align="justify">-</p></td>
-                            <td><p align="center">14/05</p></td>
-                            <td><p align="center"><a href="-">Visualizar</p></td>
-                     </tr>
-                     <tr>
-                            <td><p align="center">Quarta Sprint</p></td>
-                            <td><p align="justify">-</p></td>
-                            <td><p align="center">04/06</p></td>
-                            <td><p align="center"><a href="-">Visualizar</p></td>
-                     </tr>
  </table>
 
-<h1 align="left">🗓️ Backlog da Sprint</h1>
- <table align="center">
-                     <thead>
-                     <th width=100px>Item</th>
-                            <th width=500px>Descrição</th>
-                            <th width=45px>Status</th>
-                     </thead>
-                      <tr>
-                            <td><p align="center">Tela do Vendedor</p></td>
-                            <td><p align="left">Tela de gerenciamento de vendas e clientes.</p></td>
-                            <td><p align="center">A fazer</a></p></td>
-                     </tr>
-                      <tr>
-                            <td><p align="center">Tela Histórico de Vendas</p></td>
-                            <td><p align="left">Visualização do histórico de vendas ao longo dos meses.</p></td>
-                            <td><p align="center">A fazer</p></td>
-                     </tr>
-                     <tr>
-                            <td><p align="center">Tela do Cadastro de Vendas</p></td>
-                            <td><p align="left">Tela onde o vendedor pode preencher os dados e realizar o cadastro de suas vendas.</p></td>
-                            <td><p align="center">A fazer</p></td>
-                     </tr>
+<h1 align="left">📋 Documentação do projeto</h1>
+
 
  </table>
-<div align="center">
-   <a href="">Burndown</a> |
-   <a href="">Product Backlog</a>
-
+<div align="left">
+꒰ <a href="">Casos de Uso</a><br>
+꒰ <a href="">Burndown</a><br>
+꒰   <a href="">Product Backlog</a><br>
+꒰   <a href="">Banco de Dados</a><br><br>
+</div>
 
 <div text align= "left">
 <h1 align="left">👩‍💻 Equipe</h1>
-<a href="https://www.linkedin.com/in/thiago-lopes-chaves-5ba22b209">Thiago Chaves </a>(<i>Dev Team</i>)</li><br>
-<a href="https://www.linkedin.com/in/murilo-jos%C3%A9-de-brito-junior-32403b157">Murilo Junior</a>  (<i>Dev Team</i>)</li><br>
-<a href="https://www.linkedin.com/in/bewtrice/">Beatrice Lopes Correa</a> (<i>Product Owner</i>)</li><br>
-<a href="https://www.linkedin.com/in/guilhermealvesnas/">Guilherme Alves</a> (<i>Scrum Master</i>)</li><br>
+• <a href="https://www.linkedin.com/in/thiago-lopes-chaves-5ba22b209">Thiago Chaves </a>(<i>Dev Team</i>)<br>
+• <a href="https://www.linkedin.com/in/murilo-jos%C3%A9-de-brito-junior-32403b157">Murilo Junior </a>(<i>Dev Team</i>)<br>
+• <a href="https://github.com/NeyDiniz">Neylkson Pereira </a>(<i>Dev Team</i>)<br>
+• <a href="https://www.linkedin.com/in/bewtrice/">Beatrice Lopes Correa </a>(<i>Product Owner</i>)<br>
+• <a href="https://www.linkedin.com/in/guilhermealvesnas/">Guilherme Alves </a>(<i>Scrum Master</i>)<br>
 </div>
         
         
