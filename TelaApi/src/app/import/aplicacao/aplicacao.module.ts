@@ -7,6 +7,7 @@ import { ProgressBarModule } from 'primeng/progressbar';
 // For dynamic progressbar demo
 import { ToastModule } from 'primeng/toast';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { DialogModule } from 'primeng/dialog';
 
 
 
@@ -19,7 +20,8 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
    AvatarModule,
    ProgressBarModule,
    ToastModule,
-   MatProgressSpinnerModule
+   MatProgressSpinnerModule,
+   DialogModule
   ]
 })
 export class AplicacaoModule { }
