@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
 import { catchError, Observable, of } from 'rxjs';
 
 import { HistoricoService } from '../servico/historico.service';
 import { ErrosDialogoComponent } from './../../shared/erros-dialogo/erros-dialogo.component';
 import { Historico } from './../moldelos/historico';
+import {MatDialog} from '@angular/material/dialog';
+
 
 @Component({
   selector: 'app-historico',
