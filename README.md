@@ -56,7 +56,7 @@ estoque), predição de faturamento (feito por um algoritmo de IA já existente)
 <details>
     <summary>Banco de Dados</summary>
         ꒰ Diagrama 
-        | <a href="Doc/DiagramaEntidadeRelacionamento">Visualizar</a>  | 
+        | <a href="Doc/DiagramaEntidadeRelacionamento-1">Visualizar</a>  | 
 </details>
 </div>
 <br>
