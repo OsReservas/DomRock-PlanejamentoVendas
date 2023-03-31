@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { delay, first, tap } from 'rxjs';
+import { first, tap } from 'rxjs';
 
 import { Historico } from '../moldelos/historico';
 
@@ -9,7 +9,7 @@ import { Historico } from '../moldelos/historico';
 })
 export class HistoricoService {
 
-  private readonly API = 'assets/historico.json'
+  private readonly API = 'assets/ahistorico.json'
 
   constructor(public httpClient: HttpClient) { }
 
