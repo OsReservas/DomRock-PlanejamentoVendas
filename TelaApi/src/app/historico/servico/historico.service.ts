@@ -17,7 +17,6 @@ export class HistoricoService {
       return this.httpClient.get<Historico[]>(this.API)
       .pipe(
         first(),
-        delay(5000),
         tap(histotico => console.log(histotico))
       );
     }

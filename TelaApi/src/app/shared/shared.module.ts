@@ -1,14 +1,18 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+
+import { AplicacaoModule } from '../import/aplicacao/aplicacao.module';
+import { ErrosDialogoComponent } from './erros-dialogo/erros-dialogo.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 
 @NgModule({
-  declarations: [ SidebarComponent ],
+  declarations: [ SidebarComponent, ErrosDialogoComponent ],
   imports: [
-    CommonModule
+    CommonModule,
+    AplicacaoModule
   ],
-  exports: [SidebarComponent]
+  exports: [SidebarComponent,ErrosDialogoComponent]
 })
 export class SharedModule { }
