@@ -37,14 +37,29 @@ estoque), predição de faturamento (feito por um algoritmo de IA já existente)
 
 <h1 align="left">📋 Documentação do projeto</h1>
 
-
- </table>
 <div align="left">
-꒰ <a href="">Casos de Uso</a><br>
-꒰ <a href="">Burndown</a><br>
-꒰   <a href="">Product Backlog</a><br>
-꒰   <a href="">Banco de Dados</a><br><br>
+<details>
+    <summary>Product Backlog</summary>
+        <img src="Doc/assets/img/backlog-1.png">
+</details>
+<details>
+    <summary>Casos de uso</summary>
+        ꒰ 1. Registro de Venda<br>
+        ꒰ 2. Visualização do Histórico de Vendas<br>
+        | <a href="Doc/casos-de-uso-1.pdf">Visualizar</a>  | 
+
+</details>
+<details>
+    <summary>Gráfico Burndown</summary>
+        ꒰ <a href="">Imagem</a><br>
+</details>
+<details>
+    <summary>Banco de Dados</summary>
+        ꒰ Diagrama 
+        | <a href="Doc/DiagramaEntidadeRelacionamento">Visualizar</a>  | 
+</details>
 </div>
+<br>
 
 <div text align= "left">
 <h1 align="left">👩‍💻 Equipe</h1>
