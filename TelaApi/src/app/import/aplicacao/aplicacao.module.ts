@@ -13,9 +13,6 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
    MatCardModule,
    MatTableModule,
    MatToolbarModule,
-   AvatarModule,
-   ProgressBarModule,
-   ToastModule,
    MatProgressSpinnerModule
   ]
 })
