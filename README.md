@@ -17,7 +17,6 @@ Nesse semestre o grupo está propondo uma solução para a empresa Dom Rock. O d
 estoque), predição de faturamento (feito por um algoritmo de IA já existente) e a entrada de dados oriundas da força de vendas quanto ao planejamento futuro.
 </p>
 <div align="center"> 
-    | <a href="">Manual de Utilização</a>  | 
 
 <h1 text align= "left">🗓️ Entregas</h1>    
  <table align="center">
@@ -44,6 +43,7 @@ estoque), predição de faturamento (feito por um algoritmo de IA já existente)
 </details>
 <details>
     <summary>Casos de uso</summary>
+        <b>Casos Primeira Sprint</b><br>
         ꒰ 1. Registro de Venda<br>
         ꒰ 2. Visualização do Histórico de Vendas<br>
         | <a href="Doc/casos-de-uso-1.pdf">Visualizar</a>  | 
@@ -51,7 +51,7 @@ estoque), predição de faturamento (feito por um algoritmo de IA já existente)
 </details>
 <details>
     <summary>Gráfico Burndown</summary>
-        ꒰ <a href="">Imagem</a><br>
+        <img src="">Imagem</a><br>
 </details>
 <details>
     <summary>Banco de Dados</summary>
@@ -70,5 +70,5 @@ estoque), predição de faturamento (feito por um algoritmo de IA já existente)
 • <a href="https://www.linkedin.com/in/guilhermealvesnas/">Guilherme Alves </a>(<i>Scrum Master</i>)<br>
 </div>
         
-        
+<img src="Doc/assets/img/footer.png">        
  
