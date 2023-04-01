@@ -1,5 +1,7 @@
 package com.osreservas.projeto.dom.rock.entities;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
@@ -20,23 +22,20 @@ public class Vendas implements Serializable {
     private Integer quantidade;
 
 
+
     @ManyToMany
-    @JoinColumn(name = "produto_id")
-    private Produto produtos;
-//    @ManyToMany
-//    @JoinTable(name = "tb_produto_venda",
-//            joinColumns = @JoinColumn(name = "produto_id"),
-//            inverseJoinColumns = @JoinColumn(name = "venda_id"))
-//    Set<Produto> produtos = new HashSet<>();
+    @JoinTable(name = "tb_produto_venda",
+            joinColumns = @JoinColumn(name = "produto_id"),
+            inverseJoinColumns = @JoinColumn(name = "venda_id"))
+    Set<Produto> produtos = new HashSet<>();
 
     public Vendas(){
     }
 
-    public Vendas(Long id, Date data, Integer quantidade, Produto produtos) {
+    public Vendas(Long id, Date data, Integer quantidade) {
         this.id = id;
         this.data = data;
         this.quantidade = quantidade;
-        this.produtos = produtos;
     }
 
     public Long getId() {
@@ -61,14 +60,6 @@ public class Vendas implements Serializable {
 
     public void setQuantidade(Integer quantidade) {
         this.quantidade = quantidade;
-    }
-
-    public Produto getProdutos() {
-        return produtos;
-    }
-
-    public void setProdutos(Produto produtos) {
-        this.produtos = produtos;
     }
 
     @Override

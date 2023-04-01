@@ -11,13 +11,15 @@ public class VendasDTO {
 	
 	private Long id;
 	private Integer quantidade;
-	private Date date;
-	
+	private Date data;
+
+	public VendasDTO(){
+	}
 	public VendasDTO(Vendas vendas) {
 		
 		this.id = vendas.getId();
 		this.quantidade = vendas.getQuantidade();
-		this.date = (Date) vendas.getData();
+		this.data = (Date) vendas.getData();
 		
 		
 	}
