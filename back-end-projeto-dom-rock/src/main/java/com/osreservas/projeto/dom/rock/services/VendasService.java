@@ -70,7 +70,7 @@ public class VendasService {
 		}
 		catch (EntityNotFoundException e)
 		{
-			throw new EntidadeNaoLocalizada("Id nao Localizado" + id);
+			throw new EntidadeNaoLocalizada("Id nao Localizado " + id);
 		}
 	}
 
@@ -82,7 +82,7 @@ public class VendasService {
 			repository.deleteById(id);
 		}
 		catch (EmptyResultDataAccessException e){
-			throw new EntidadeNaoLocalizada("Id Not Found" + id);
+			throw new EntidadeNaoLocalizada("Id Not Found: " + id);
 		}
 		catch (DataIntegrityViolationException e){
 			throw new DatabaseException("Integrity Violation");
