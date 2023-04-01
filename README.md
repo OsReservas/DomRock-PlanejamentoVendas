@@ -64,8 +64,7 @@
 
 <details>
     <summary>Banco de Dados</summary>
-        ꒰ Diagrama 
-        | <a href="Doc/DiagramaEntidadeRelacionamento-1">Visualizar</a>  | 
+        <img src ="Doc/DiagramaEntidadeRelacionamento-1/diagrama-1.drawio.png"
 </details>
 </div>
 <br>
