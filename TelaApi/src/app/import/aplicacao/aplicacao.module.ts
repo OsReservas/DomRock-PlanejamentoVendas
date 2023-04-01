@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
-// For dynamic progressbar demo
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-import {MatDialogModule} from '@angular/material/dialog';
 
+// For dynamic progressbar demo
 
 
 
@@ -16,7 +17,8 @@ import {MatDialogModule} from '@angular/material/dialog';
    MatTableModule,
    MatToolbarModule,
    MatProgressSpinnerModule,
-   MatDialogModule
+   MatDialogModule,
+   MatButtonModule
   ]
 })
 export class AplicacaoModule { }

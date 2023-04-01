@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path:'',
     pathMatch:'full',
+    redirectTo: 'CadastroVendas'
+  },
+
+  { path:'CadastroVendas',
     component: HomeComponent,
     loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
   },

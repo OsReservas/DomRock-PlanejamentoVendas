@@ -9,7 +9,7 @@ import { Historico } from '../moldelos/historico';
 })
 export class HistoricoService {
 
-  private readonly API = 'assets/ahistorico.json'
+  private readonly API = 'assets/historico.json'
 
   constructor(public httpClient: HttpClient) { }
 
