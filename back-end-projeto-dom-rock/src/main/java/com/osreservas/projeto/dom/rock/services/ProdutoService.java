@@ -7,6 +7,7 @@ import com.osreservas.projeto.dom.rock.exceptions.DatabaseException;
 import com.osreservas.projeto.dom.rock.exceptions.EntidadeNaoLocalizada;
 import com.osreservas.projeto.dom.rock.repositories.ProdutoRepository;
 
+import com.osreservas.projeto.dom.rock.repositories.VendasRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.dao.EmptyResultDataAccessException;
@@ -25,6 +26,9 @@ public class ProdutoService {
 
     @Autowired
     private ProdutoRepository repository;
+
+
+
 
 
 
