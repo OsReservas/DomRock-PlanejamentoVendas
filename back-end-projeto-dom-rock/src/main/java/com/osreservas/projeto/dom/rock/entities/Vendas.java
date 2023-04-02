@@ -1,9 +1,9 @@
 package com.osreservas.projeto.dom.rock.entities;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.time.Instant;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Objects;
@@ -18,7 +18,9 @@ public class Vendas implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Date data;
+
+    @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
+    private Instant data;
     private Integer quantidade;
 
 
@@ -32,7 +34,7 @@ public class Vendas implements Serializable {
     public Vendas(){
     }
 
-    public Vendas(Long id, Date data, Integer quantidade) {
+    public Vendas(Long id, Instant data, Integer quantidade) {
         this.id = id;
         this.data = data;
         this.quantidade = quantidade;
@@ -46,11 +48,11 @@ public class Vendas implements Serializable {
         this.id = id;
     }
 
-    public Date getData() {
+    public Instant getData() {
         return data;
     }
 
-    public void setData(Date data) {
+    public void setData(Instant data) {
         this.data = data;
     }
 
@@ -62,6 +64,13 @@ public class Vendas implements Serializable {
         this.quantidade = quantidade;
     }
 
+
+    public Set<Produto> getProdutos() {
+        return produtos;
+    }
+
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -69,6 +78,7 @@ public class Vendas implements Serializable {
         Vendas vendas = (Vendas) o;
         return id.equals(vendas.id);
     }
+
 
     @Override
     public int hashCode() {

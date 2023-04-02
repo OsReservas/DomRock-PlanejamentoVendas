@@ -2,7 +2,11 @@ package com.osreservas.projeto.dom.rock.dto;
 
 import com.osreservas.projeto.dom.rock.entities.Produto;
 
-public class ProdutoDTO {
+import java.io.Serializable;
+
+public class ProdutoDTO implements Serializable {
+    private static final long serialVersionUID = 1l;
+
 
     private Long id;
     private String nome;

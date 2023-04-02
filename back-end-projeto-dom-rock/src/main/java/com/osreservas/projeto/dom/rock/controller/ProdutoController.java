@@ -14,7 +14,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 
 import java.net.URI;
-import java.util.List;
+
 
 
 @RestController
@@ -59,13 +59,13 @@ public class ProdutoController {
     }
 
 
-//    @PutMapping(value = "/{id}")
-//    public ResponseEntity<ProdutoDTO> update(@PathVariable Long id, @RequestBody ProdutoDTO dto) {
-//        dto = Produtoservice.update(dto);
-//        return ResponseEntity.ok().body(dto);
-//
-//
-//    }
+    @PutMapping(value = "/{id}")
+    public ResponseEntity<ProdutoDTO> update(@PathVariable Long id, @RequestBody ProdutoDTO dto) throws EntidadeNaoLocalizada {
+        dto = Produtoservice.update(id,dto);
+        return ResponseEntity.ok().body(dto);
+
+
+    }
 
 
     @DeleteMapping(value = "/{id}")

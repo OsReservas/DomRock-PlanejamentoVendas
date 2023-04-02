@@ -49,13 +49,13 @@ public class VendasController {
 	}
 
 
-//    @PutMapping(value = "/{id}")
-//    public ResponseEntity<ProdutoDTO> update(@PathVariable Long id, @RequestBody ProdutoDTO dto) {
-//        dto = Produtoservice.update(dto);
-//        return ResponseEntity.ok().body(dto);
-//
-//
-//    }
+    @PutMapping(value = "/{id}")
+    public ResponseEntity<VendasDTO> update(@PathVariable Long id, @RequestBody VendasDTO dto) throws EntidadeNaoLocalizada {
+        dto = vendasService.update(id, dto);
+        return ResponseEntity.ok().body(dto);
+
+
+    }
 
 
 	@DeleteMapping(value = "/{id}")
