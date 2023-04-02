@@ -23,22 +23,33 @@ public class Vendas implements Serializable {
     private Instant data;
     private Integer quantidade;
 
+    private String cliente;
+
 
 
     @ManyToMany
     @JoinTable(name = "tb_produto_venda",
-            joinColumns = @JoinColumn(name = "produto_id"),
-            inverseJoinColumns = @JoinColumn(name = "venda_id"))
+            joinColumns = @JoinColumn (name = "venda_id"),
+            inverseJoinColumns = @JoinColumn(name = "produto_id"))
     Set<Produto> produtos = new HashSet<>();
+
+
+    public Set<Produto> getProdutos() {
+        return produtos;
+    }
+
 
     public Vendas(){
     }
 
-    public Vendas(Long id, Instant data, Integer quantidade) {
+    public Vendas(Long id, Instant data, Integer quantidade, String cliente) {
         this.id = id;
         this.data = data;
         this.quantidade = quantidade;
+        this.cliente = cliente;
     }
+
+
 
     public Long getId() {
         return id;
@@ -64,12 +75,13 @@ public class Vendas implements Serializable {
         this.quantidade = quantidade;
     }
 
-
-    public Set<Produto> getProdutos() {
-        return produtos;
+    public String getCliente() {
+        return cliente;
     }
 
-
+    public void setCliente(String cliente) {
+        this.cliente = cliente;
+    }
 
     @Override
     public boolean equals(Object o) {

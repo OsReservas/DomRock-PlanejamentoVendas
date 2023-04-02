@@ -1,7 +1,6 @@
 package com.osreservas.projeto.dom.rock.dto;
 
 import java.io.Serializable;
-import java.sql.Date;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +22,8 @@ public class VendasDTO implements Serializable {
 	private Integer quantidade;
 	private Instant data;
 
+	private String cliente;
+
 	private List<ProdutoDTO> produtos = new ArrayList<>();
 
 
@@ -31,16 +32,18 @@ public class VendasDTO implements Serializable {
 	}
 
 
-	public VendasDTO(Long id, Integer quantidade, Instant data) {
+	public VendasDTO(Long id, Integer quantidade, Instant data, String cliente) {
 		this.id = id;
 		this.quantidade = quantidade;
 		this.data = data;
+		this.cliente = cliente;
 	}
 
 	public VendasDTO(Vendas entity) {
 		this.id = entity.getId();
 		this.quantidade = entity.getQuantidade();
 		this.data = entity.getData();
+		this.cliente = entity.getCliente();
 
 	}
 
@@ -77,6 +80,16 @@ public class VendasDTO implements Serializable {
 	}
 
 
+	public String getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(String cliente) {
+		this.cliente = cliente;
+	}
+
+
+
 	@Override
 	public boolean equals(Object o) {
 		if (this == o) return true;
@@ -89,6 +102,7 @@ public class VendasDTO implements Serializable {
 	public int hashCode() {
 		return Objects.hash(id);
 	}
+
 
 	public List<ProdutoDTO> getProdutos() {
 		return produtos;

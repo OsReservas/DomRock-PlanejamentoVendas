@@ -56,6 +56,7 @@ public class VendasService {
 		Vendas entity = new Vendas();
 		entity.setData(dto.getData());
 		entity.setQuantidade(dto.getQuantidade());
+		entity.setCliente(dto.getCliente());
 		entity = repository.save(entity);
 		return new VendasDTO(entity);
 
@@ -69,6 +70,7 @@ public class VendasService {
 			Vendas entity = repository.getReferenceById(id);
 			entity.setData(dto.getData());
 			entity.setQuantidade(dto.getQuantidade());
+			entity.setCliente(dto.getCliente());
 			entity = repository.save(entity);
 			return new VendasDTO(entity);
 		}
