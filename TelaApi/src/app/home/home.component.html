@@ -9,8 +9,8 @@
         <form class="formulario h-100 p-5" [formGroup]="cadastroVenda">
             <div class="itens row align-items-md-stretch">
                 <div class="col-md-6">
-                        <label for="cliente">Cliente</label>
-                        <input id="cliente" class="form-control" type = "text" formControlName="cliente">
+                    <label for="cliente">Cliente</label>
+                    <input id="cliente" class="form-control" type = "text" formControlName="cliente">
                 </div>
                 <div class="col-md-6">
                     <label for="produto">Produto</label>
@@ -33,10 +33,10 @@
 
             <div class="itens row align-items-md-stretch">
                 <div class="col-md-1">
-                    <button class="btn btn-block btn-outline-primary btn-lg ">Salvar</button>
+                    <button class="btn btn-block btn-outline-primary btn-lg" (click)="salvarVenda()">Salvar</button>
              </div>
                 <div class="col-md-1">
-                    <button class="btn btn-outline-primary btn-lg btn-block">Limpar</button>
+                    <button class="btn btn-outline-primary btn-lg btn-block" (click)="limpar()">Limpar</button>
                 </div>
             </div>
         </form>
