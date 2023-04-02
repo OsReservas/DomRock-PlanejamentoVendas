@@ -4,7 +4,6 @@ package com.osreservas.projeto.dom.rock.entities;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
@@ -27,10 +26,11 @@ public class Produto implements Serializable {
 
     }
 
-    @ManyToMany(mappedBy = "produtos")
+
+    @ManyToMany(mappedBy = "produtos", fetch = FetchType.LAZY)
     Set<Vendas> vendas = new HashSet<>();
 
-    
+
 
     public Produto(Long id, String nome, String descricao) {
         this.id = id;

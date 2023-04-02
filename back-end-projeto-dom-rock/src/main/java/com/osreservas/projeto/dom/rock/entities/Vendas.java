@@ -1,10 +1,11 @@
 package com.osreservas.projeto.dom.rock.entities;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import javax.persistence.*;
 import java.io.Serializable;
-import java.time.Instant;
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -19,30 +20,49 @@ public class Vendas implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
-    private Instant data;
+
+    @JsonFormat(pattern="dd/MM/yyyy")
+    private LocalDate data;
     private Integer quantidade;
 
     private String cliente;
 
 
 
+
     @ManyToMany
-    @JoinTable(name = "tb_produto_venda",
-            joinColumns = @JoinColumn (name = "venda_id"),
-            inverseJoinColumns = @JoinColumn(name = "produto_id"))
+    @JoinTable(
+            name = "tb_produto_venda",
+            joinColumns = {
+                    @JoinColumn (name = "vendas_id", referencedColumnName = "id")
+            },
+            inverseJoinColumns = {
+                    @JoinColumn(name = "produto_id", referencedColumnName = "id")
+            })
     Set<Produto> produtos = new HashSet<>();
+
 
 
     public Set<Produto> getProdutos() {
         return produtos;
     }
 
+    public void setProdutos(Set<Produto> produtos) {
+        this.produtos = produtos;
+    }
+
+
+
+    public Vendas(Set<Produto> produtos) {
+        this.produtos = produtos;
+    }
 
     public Vendas(){
     }
 
-    public Vendas(Long id, Instant data, Integer quantidade, String cliente) {
+
+
+    public Vendas(Long id, LocalDate data, Integer quantidade, String cliente) {
         this.id = id;
         this.data = data;
         this.quantidade = quantidade;
@@ -59,11 +79,11 @@ public class Vendas implements Serializable {
         this.id = id;
     }
 
-    public Instant getData() {
+    public LocalDate getData() {
         return data;
     }
 
-    public void setData(Instant data) {
+    public void setData(LocalDate data) {
         this.data = data;
     }
 
@@ -96,4 +116,15 @@ public class Vendas implements Serializable {
     public int hashCode() {
         return Objects.hash(id);
     }
+
+
+
+
+
+
+
+
+
+
+
 }
