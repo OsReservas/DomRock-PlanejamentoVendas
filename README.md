@@ -57,12 +57,12 @@
         | <a href="Doc/casos-de-uso-1.pdf">Visualizar</a>  | 
 </details>
 
-<!--
+
 <details>
     <summary>Gráfico Burndown</summary>
-        <img src=""></a><br>
+        <img src="Doc\assets\img\burndownSprint-1.png"></a><br>
 </details>
--->
+
 
 <details>
     <summary>Banco de Dados</summary>
