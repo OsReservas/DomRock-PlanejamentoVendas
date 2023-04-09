@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { CadastroVendaComponent } from './cadastro-vendas.component';
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [CadastroVendaComponent],
   imports: [
     CommonModule,
     ReactiveFormsModule,
@@ -19,7 +19,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatSelectModule,
     MatFormFieldModule,
   ],
-  exports:[HomeComponent]
+  exports:[CadastroVendaComponent]
 })
-export class HomeModule { }
+export class CadastroVendaModule { }
 

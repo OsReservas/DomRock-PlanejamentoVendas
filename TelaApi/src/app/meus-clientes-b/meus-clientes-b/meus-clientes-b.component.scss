@@ -1,0 +1,148 @@
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+
+:root {
+	// Basic
+	--c-white: #fff;
+	--c-black: #000;
+
+	// Greys
+	--c-ash: #eaeef6;
+	--c-charcoal: #a0a0a0;
+	--c-void: #141b22;
+
+	// Beige/Browns
+	--c-fair-pink: #FFEDEC;
+	--c-apricot: #FBC8BE;
+	--c-coffee: #754D42;
+	--c-del-rio: #917072;
+
+	// Greens
+	--c-java: #1FCAC5;
+
+	// Purples
+	--c-titan-white: #f1eeff;
+	--c-cold-purple: #a69fd6;
+	--c-indigo: #6558d3;
+	--c-governor: #4133B7;
+}
+
+body {
+	line-height: 1.5;
+	min-height: 100vh;
+	background-color: var(--c-ash);
+}
+
+.toolbar{
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2.5rem;
+	width: 90%;
+	max-width: 1000px;
+	margin: 10vh auto;
+}
+
+.card {
+	border-radius: 16px;
+	box-shadow: 0 30px 30px -25px rgba(#4133B7, .25);
+	max-width: 300px;
+}
+
+.information {
+	background-color: var(--c-white);
+	padding: 1.5rem;
+
+	.tag {
+		display: inline-block;
+		background-color: var(--c-titan-white);
+		color: var(--c-indigo);
+		font-weight: 600;
+		font-size: 0.875rem;
+		padding: 0.5em 0.75em;
+		line-height: 1;
+		border-radius: 6px;
+		& + * {
+			margin-top: 1rem;
+		}
+	}
+
+	.title {
+		font-size: 1.5rem;
+		color: var(--c-void);
+		line-height: 1.25;
+		& + * {
+			margin-top: 1rem;
+		}
+	}
+
+	.info {
+		color: var(--c-charcoal);
+		& + * {
+			margin-top: 1.25rem;
+		}
+	}
+	
+	strong {
+		font-weight: 600;
+		color: var(--c-coffee);
+	}
+ 
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .l-card__user {
+    display: flex;
+    flex-direction: row;
+    padding-top: 24px;
+    margin-top: 12px;
+    /* border-top: 1px solid #c1c1c1; */
+    align-items: center;
+  }
+  .l-card__userImage {
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  .l-card__userImage img {
+    width: 100%;
+    height: 100%;
+    object-filt: cover;
+  }
+  
+  .l-card__userInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+  }
+  
+  .l-card__userInfo span:nth-child(1) {
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #3f3f55;
+  }
+  .l-card__userInfo span:nth-child(2) {
+    color: #adada6;
+    font-family: sans-serif;
+    font-size: 12px;
+    margin-top: 2px;
+  }
+  
+
+}
+

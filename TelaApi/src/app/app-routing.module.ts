@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { CadastroVendaComponent } from './cadastro-vendas/cadastro-vendas.component';
 
 
 const routes: Routes = [
@@ -10,13 +10,17 @@ const routes: Routes = [
     redirectTo: 'CadastroVendas'
   },
 
-  { path:'CadastroVendas',
-    component: HomeComponent,
-    loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
+  
+  { path:'cadastroVendas',
+    component: CadastroVendaComponent,
+    loadChildren: () => import('./cadastro-vendas/cadastro-vendas.module').then(m => m.CadastroVendaModule)
   },
 
   {path:'historico',
-  loadChildren: () => import('./historico/historico.module').then(m => m.HistoricoModule)}
+  loadChildren: () => import('./historico/historico.module').then(m => m.HistoricoModule)},
+
+  {path:'meus-clientes',
+  loadChildren: () => import('./meus-clientes-b/meus-clientes-b.module').then(m => m.MeusClientesModule)}
 ];
 
 @NgModule({

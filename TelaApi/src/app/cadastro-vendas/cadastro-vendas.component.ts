@@ -5,10 +5,10 @@ import { VendasDto } from './models/vendasDto';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  templateUrl: './cadastro-vendas.component.html',
+  styleUrls: ['./cadastro-vendas.component.scss']
 })
-export class HomeComponent implements OnInit{
+export class CadastroVendaComponent implements OnInit{
   cadastroVenda : FormGroup = new FormGroup({});
 
   constructor(private vendaService: VendasService){
