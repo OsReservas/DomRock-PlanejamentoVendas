@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoginService } from './login/service/login.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TelaApi';
+  isAuthorized: boolean = false;
+
+  constructor(private loginService: LoginService) {
+    this.loginService.loggedEvent.subscribe(x => {
+      this.isAuthorized = x
+    });
+  }
 }
