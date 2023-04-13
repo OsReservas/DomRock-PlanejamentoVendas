@@ -5,41 +5,38 @@
 }
 
 
-:root {
+/*
 	// Basic
-	--c-white: #fff;
-	--c-black: #000;
+	white: #fff;
+	black: #000;
 
-	// Greys
-	--c-ash: #eaeef6;
-	--c-charcoal: #a0a0a0;
-	--c-void: #141b22;
+	// Cinza
+	ash: #eaeef6;
+	charcoal: #a0a0a0;
+	void: #141b22;
 
-	// Beige/Browns
-	--c-fair-pink: #FFEDEC;
-	--c-apricot: #FBC8BE;
-	--c-coffee: #754D42;
-	--c-del-rio: #917072;
+	// Verde
+	java: #1FCAC5;
 
-	// Greens
-	--c-java: #1FCAC5;
-
-	// Purples
-	--c-titan-white: #f1eeff;
-	--c-cold-purple: #a69fd6;
-	--c-indigo: #6558d3;
-	--c-governor: #4133B7;
-}
+	// Roxo e Azul
+	titan-white: #f1eeff;
+	cold-purple: #a69fd6;
+	indigo: #6558d3;
+	governor: #4133B7;
+	blue: #537FE7;
+*/
 
 body {
 	line-height: 1.5;
 	min-height: 100vh;
-	background-color: var(--c-ash);
+	background-color: #eaeef6;
 }
 
 .toolbar{
   margin-bottom: 20px;
   justify-content: center;
+  background-color:#537FE7;
+  color: #fff;
 }
 .cards {
 	display: flex;
@@ -60,13 +57,13 @@ body {
 }
 
 .information {
-	background-color: var(--c-white);
+	background-color: #fff;
 	padding: 1.5rem;
 
 	.tag {
 		display: inline-block;
-		background-color: var(--c-titan-white);
-		color: var(--c-indigo);
+		background-color: #f1eeff;
+		color: #6558d3;
 		font-weight: 600;
 		font-size: 0.875rem;
 		padding: 0.5em 0.75em;
@@ -79,7 +76,7 @@ body {
 
 	.title {
 		font-size: 1.5rem;
-		color: var(--c-void);
+		color: #141b22;
 		line-height: 1.25;
 		& + * {
 			margin-top: 1rem;
@@ -121,7 +118,7 @@ body {
   .l-card__userImage img {
     width: 100%;
     height: 100%;
-    object-filt: cover;
+    object-fit: cover;
   }
   
   .l-card__userInfo {
